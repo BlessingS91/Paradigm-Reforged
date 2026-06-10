@@ -1,0 +1,359 @@
+/* =========================
+   RESET
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  background: radial-gradient(circle at top, #f6f1e6 0%, #e7decd 100%);
+  color: #1f1a14;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 30px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+  width: min(1700px, 100%);
+  margin: 60px auto;
+  border-collapse: collapse;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.97),
+    rgba(247, 241, 231, 0.97)
+  );
+
+  border: 2px solid #4c3d28;
+  border-radius: 14px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background: linear-gradient(to bottom, #d8bc92, #675944);
+
+  color: #f5ead8;
+
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+
+  padding: 16px;
+  text-align: left;
+
+  border-bottom: 2px solid #5b4f3f;
+}
+
+td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(76, 61, 40, 0.25);
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background: rgba(120, 95, 60, 0.045);
+}
+
+tr:hover td {
+  background: rgba(150, 120, 70, 0.09);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  body {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .raceName {
+    font-size: 1.7rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+/* =========================
+   CENTER ALL TABLE CONTENT
+========================= */
+
+table th,
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Make sure trait column also follows center rules */
+td:nth-child(4) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Optional: improve readability when centered */
+td {
+  line-height: 1.6;
+}
+
+/* Ensure header stays visually balanced */
+th {
+  text-align: center;
+}
+
+/* =========================
+   CLASS NAME PANEL
+========================= */
+
+.class-name {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(105, 91, 13, 0.913);
+
+  text-align: center;
+}
+
+/* =========================
+   SKILL PANELS (MAJOR + MINOR)
+========================= */
+
+.major-skills,
+.minor-skills {
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 1.2rem;
+}
+
+/* =========================
+   MAJOR SKILLS = GOLD EMPHASIS
+========================= */
+
+.major-skills {
+  font-weight: 600;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(105, 91, 13, 0.913);
+}
+
+/* =========================
+   MINOR SKILLS = MUTED
+========================= */
+
+.minor-skills {
+  font-weight: 600;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(121, 107, 27, 0.888);
+}
+
+/* =========================
+   SKILL LINE SPACING
+========================= */
+
+.major-skills br,
+.minor-skills br {
+  display: block;
+}
+
+/* =========================
+   ROW HOVER POLISH (UPDATED)
+========================= */
+
+tr {
+  transition: transform 0.15s ease;
+  transform-origin: center;
+}
+
+tr:hover {
+  transform: scale(1.02);
+  position: relative;
+  z-index: 2;
+}
+
+tr:hover td {
+  background: rgba(180, 150, 90, 0.1);
+  border-bottom: 2px solid rgba(76, 61, 40, 0.7);
+}
+
+/* keep transition OUTSIDE hover (important fix) */
+td {
+  border-bottom: 2px solid rgba(76, 61, 40, 0.55);
+  transition:
+    background 0.15s ease,
+    border-bottom 0.15s ease;
+}
+
+.trait {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(105, 91, 13, 0.913);
+}
+
+.major-skills,
+.minor-skills {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+
+  padding: 14px 20px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(216, 188, 146, 0.95),
+    rgba(103, 89, 68, 0.95)
+  );
+
+  border-bottom: 2px solid #4c3d28;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  font-family: "Cinzel Decorative", "Cinzel", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #f7eddc;
+  text-decoration: none;
+
+  padding: 6px 14px;
+  border-radius: 6px;
+
+  transition: 0.15s ease;
+}
+
+.navbar a:hover {
+  transform: translateY(-2px);
+}
+
+.class-img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.class-img-beggar {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-left: 37px;
+  vertical-align: middle;
+}
+
+.race-img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.race-img-altmer {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}

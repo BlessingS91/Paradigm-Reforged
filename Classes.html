@@ -1,0 +1,823 @@
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<nav class="navbar">
+  <a href="RaceGender.html">Races</a>
+  <a href="Classes.html">Classes</a>
+</nav>
+<table border="1">
+  <tr>
+    <th>Class</th>
+    <th>Major Skills</th>
+    <th>Minor Skills</th>
+    <th class="perk">Traits</th>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Sentinel
+      <img src="images/sentinel.png" alt="Sentinel" class="class-img" />
+    </td>
+    <td class="major-skills">
+      HeavyArmor<br />
+      Marksman
+    </td>
+    <td class="minor-skills">
+      Block<br />
+      Smithing
+    </td>
+    <td>
+      <div class="trait">Sentinel Stance</div>
+      Enter Sentinel Stance after not moving for 1.5 seconds.<br /><br />
+
+      <div class="trait">Standfast Ballistics</div>
+      While in Sentinel Stance, crossbow attacks generate Offensive stacks.
+      Offensive stacks increase crossbow damage while in Sentinel Stance. Stack
+      strength and duration scales with Marksman skill.<br /><br />
+
+      <div class="trait">Iron Anchoring:</div>
+      While in Sentinel Stance blocking or crossbow bashes generate Defensive
+      stacks. Defensive stacks increase armor and reduce stagger while in
+      Sentinel Stance. Stack strength and duration scales with Heavy Armor
+      skill.<br /><br />
+
+      <div class="trait">Steadfast Constitution</div>
+      Starting Health is increased by 25%.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Merchant
+      <img src="images/merchant.png" alt="Merchant" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Speechcraft<br />
+      Smithing
+    </td>
+    <td class="minor-skills">
+      Alchemy<br />
+      LightArmor
+    </td>
+    <td>
+      <div class="trait">Silver Tongue</div>
+      Buying and selling prices scale more effectively with Charisma skill.<br /><br />
+
+      <div class="trait">Trade Caravan</div>
+      Carry weight and selling prices increase as Smithing skill improves.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Ranger
+      <img src="images/ranger.png" alt="Ranger" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Marksman<br />
+      LightArmor
+    </td>
+    <td class="minor-skills">
+      Sneak<br />
+      Alchemy
+    </td>
+    <td>
+      <div class="trait">Penetrating Shot</div>
+      Close range bow shots are more effective at piercing through armor,
+      scaling with Marksman skill.<br /><br />
+
+      <div class="trait">Skirmisher's Stride</div>
+      Firing a bow grants increased movement speed for 3 seconds, scaling with
+      your Light Armor skill.<br /><br />
+
+      <div class="trait">Field Endurance</div>
+      A hunter’s conditioning increases starting stamina by 25%.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Assassin
+      <img src="images/assassin.png" alt="Assassin" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Sneak<br />
+      OneHanded
+    </td>
+    <td class="minor-skills">
+      Alchemy<br />
+      LightArmor
+    </td>
+    <td>
+      <div class="trait">Assassin's Precision</div>
+      Attacks made from behind with Daggers deal increased damage and critical
+      damage, scaling with One-Handed skill.<br /><br />
+
+      <div class="trait">Killer's Instinct</div>
+      Dagger backstab sneak attacks deal increased damage and have increased
+      critical strike chance, scaling with Agility skill.<br /><br />
+
+      <div class="trait">Shadow Conditioning</div>
+      Years of silent movement grant +25% starting stamina.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Barbarian
+      <img src="images/barbarian.png" alt="Barbarian" class="class-img" />
+    </td>
+    <td class="major-skills">
+      TwoHanded<br />
+      LightArmor
+    </td>
+    <td class="minor-skills">
+      Guard<br />
+      Smithing
+    </td>
+    <td>
+      <div class="trait">Crushing Blows</div>
+      Two-Handed power attacks deal additional Stamina damage, scaling with your
+      Two-Handed skill.<br /><br />
+
+      <div class="trait">Unstoppable</div>
+      Take reduced stagger damage from enemies below 50% Stamina, scaling with
+      your Light Armor skill.<br /><br />
+
+      <div class="trait">Battle Hardened</div>
+      +12.5% Health and +12.5% Stamina.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Bard
+      <img src="images/bard.png" alt="Bard" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Speechcraft<br />
+      Illusion
+    </td>
+    <td class="minor-skills">
+      Pickpocket<br />
+      Lockpicking
+    </td>
+    <td>
+      <div class="trait">Bardic Performance</div>
+      Song magnitude and duration are increased. Effects scale with Charisma
+      skill.<br /><br />
+
+      <div class="trait">Inspiring Presence</div>
+      While affected by one of your songs, Courage, Frenzy and Calm spells are
+      more effective. Effects scale with Illusion skill.<br /><br />
+
+      <div class="trait">Wanderer’s Rhythm</div>
+      Years of travel and performance grant +12.5% Stamina and +12.5% Magicka.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Reaver
+      <img src="images/reaver.png" alt="Reaver" class="class-img" />
+    </td>
+    <td class="major-skills">
+      OneHanded<br />
+      Conjuration
+    </td>
+    <td class="minor-skills">
+      HeavyArmor<br />
+      Pickpocket
+    </td>
+    <td>
+      <div class="trait">Dark Armament</div>
+      Bound Weapons deal increased damage, scaling with One-Handed skill.<br /><br />
+
+      <div class="trait">Soul Rend</div>
+      Bound Weapon attacks absorb Health, scaling with Conjuration skill.<br /><br />
+
+      <div class="trait">Grave-Bound Vitality</div>
+      Exposure to necromantic energies grants +12.5% Health and +12.5% Magicka.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Brawler
+      <img src="images/brawler.png" alt="Brawler" class="class-img" />
+    </td>
+    <td class="major-skills">
+      HandToHand<br />
+      Guard
+    </td>
+    <td class="minor-skills">
+      HeavyArmor<br />
+      Smithing
+    </td>
+    <td>
+      <div class="trait">One-Two Punch</div>
+      Every second consecutive unarmed light attack deals increased damage.
+      Effect scales with Hand to Hand skill.
+      <br /><br />
+
+      <div class="trait">Haymaker</div>
+      Unarmed power attacks deal increased damage, but increase damage taken by
+      30% while attacking. Effect scales with Hand to Hand skill.
+      <br /><br />
+
+      <div class="trait">Windup</div>
+      Blocking while unarmed grants Windup for several seconds. While Windup is
+      active, incoming damage is reduced and Haymaker no longer increases damage
+      taken. Effect scales with Guard skill.<br /><br />
+
+      <div class="trait">Pit Fighter Conditioning</div>
+      Endless arena combat builds resilience: +25% starting Health.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Crusader
+      <img src="images/crusader.png" alt="Crusader" class="class-img" />
+    </td>
+    <td class="major-skills">
+      TwoHanded<br />
+      Restoration
+    </td>
+    <td class="minor-skills">
+      Guard<br />
+      HeavyArmor
+    </td>
+    <td>
+      <div class="trait">Divine Protection</div>
+      Power attacks grant a healing over time effect lasting 10 seconds and sun
+      spells deal increased damage, scaling with Restoration skill.<br /><br />
+
+      <div class="trait">Consecrate</div>
+      While under Divine Protection, two-handed weapons deal additional sun
+      damage against undead, scaling with Two-Handed skill.<br /><br />
+
+      <div class="trait">Blessed Resolve</div>
+      +25% starting Health.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Spellblade
+      <img src="images/spellblade.png" alt="Spellblade" class="class-img" />
+    </td>
+    <td class="major-skills">
+      OneHanded<br />
+      Destruction
+    </td>
+    <td class="minor-skills">
+      LightArmor<br />
+      Alteration
+    </td>
+    <td>
+      <div class="trait">Arcane Flow</div>
+      Casting any spell while a weapon is equipped empowers melee attacks,
+      increasing weapon damage for a short duration, scaling with One-Handed
+      skill.<br /><br />
+
+      <div class="trait">Spellbreak Momentum</div>
+      Landing a melee attack empowers Destruction spells, increasing spell
+      damage for a short duration, scaling with Destruction skill.<br /><br />
+
+      <div class="trait">Battle Caster</div>
+      Martial and arcane training grants +12.5% Stamina and +12.5% Magicka.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Witch Doctor
+      <img src="images/witchdoctor.png" alt="Witch Doctor" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Restoration<br />
+      Alchemy
+    </td>
+    <td class="minor-skills">
+      Conjuration<br />
+      OneHanded
+    </td>
+    <td>
+      <div class="trait">Virulent Brews</div>
+      Poisoned weapons gain additional poison charges as Alchemy skill
+      increases. Gain 1 charge every 30 Alchemy skill, up to 4 at 100.<br /><br />
+
+      <div class="trait">Toxic Mastery</div>
+      Poison damage from spells is increased against targets affected by Alchemy
+      poisons, scaling with Restoration skill.<br /><br />
+
+      <div class="trait">Tribal Apothecary</div>
+      +25% Magicka.
+    </td>
+  </tr>
+  <tr>
+    <td class="class-name">
+      Arcanist
+      <img src="images/arcanist.png" alt="Arcanist" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Destruction<br />
+      Alteration
+    </td>
+    <td class="minor-skills">
+      Restoration<br />
+      Illusion
+    </td>
+    <td>
+      <div class="trait">Catalyst</div>
+      Casting non-concentration spells applies Catalyst, reducing cost of next
+      spell. Scales with Alteration skill.<br /><br />
+
+      <div class="trait">Backdraft</div>
+      Next non-concentration spell consumes Catalyst and increases magnitude and
+      duration of the spell. Scales with Destruction skill.<br /><br />
+
+      <div class="trait">Aetheric Overflow</div>
+      +25% Magicka.
+    </td>
+  </tr>
+  <tr>
+    <td class="class-name">
+      Artisan
+      <img src="images/artisan.png" alt="Artisan" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Enchanting<br />
+      Smithing
+    </td>
+    <td class="minor-skills">
+      Alchemy<br />
+      Speechcraft
+    </td>
+    <td>
+      <div class="trait">Arcane Craftsmanship</div>
+      Enchanted items gain 1 additional enchantment slot but are half as strong.
+      Enchantments scale more powerfully with Enchanting level.<br /><br />
+
+      <div class="trait">Masterwork Tempering</div>
+      Tempering weapons and armor is more effective, scaling with Smithing
+      skill.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Cleric
+      <img src="images/cleric.png" alt="Cleric" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Restoration<br />
+      HeavyArmor
+    </td>
+    <td class="minor-skills">
+      Speechcraft<br />
+      OneHanded
+    </td>
+    <td>
+      <div class="trait">Divine Communion</div>
+      The effects and duration of blessings are increased based on Restoration
+      skill.<br /><br />
+
+      <div class="trait">Empowered Blessing</div>
+      Once every 30 seconds, blocking empowers the Cleric's active blessing.
+      <br /><br />
+
+      <div class="trait">Divine Blessing</div>
+      While empowered, the Cleric regenerates Health over time. Healing scales
+      with Restoration skill.<br /><br />
+
+      <div class="trait">Daedric Blessing</div>
+      While empowered, nearby enemies suffer Poison damage over time. Damage
+      scales with Restoration skill.<br /><br />
+
+      <div class="trait">Sacred Bulwark</div>
+      While under the effects of an Empowered Blessing, damage taken is reduced
+      based on Heavy Armor skill.<br /><br />
+
+      <div class="trait">Sanctified Constitution</div>
+      Divine favor fortifies the body: +12.5% Magicka and +12.5% Health.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Knight
+      <img src="images/knight.png" alt="Knight" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Block<br />
+      HeavyArmor
+    </td>
+    <td class="minor-skills">
+      OneHanded<br />
+      Speechcraft
+    </td>
+    <td>
+      <div class="trait">Steeled Advance</div>
+      Blocking an attack increases damage done for 10 seconds stacking up to
+      three times. Scales with Block skill.<br /><br />
+
+      <div class="trait">Iron Bastion</div>
+      Blocking an attack reduces damage and stagger taken for 10 seconds
+      stacking up to three times. Scales with Heavy Armor skill.<br /><br />
+
+      <div class="trait">Knights Resolve</div>
+      +25% starting Health.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Beggar
+      <img src="images/beggar.png" alt="Beggar" class="class-img-beggar" />
+    </td>
+    <td class="major-skills">None</td>
+    <td class="minor-skills">None</td>
+    <td>
+      <div class="trait">Destitute</div>
+      Begins the game with a single Gold coin and no skill bonuses.
+      <br /><br />
+
+      <div class="trait">Chosen</div>
+      Deal massively increased damage to Dragons and Dragon Priests, and take
+      significantly reduced damage from them.
+      <br /><br />
+
+      <div class="trait">Starved Body</div>
+      Severely weakened starting physiology reduces all stats to 66% of normal.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Monk
+      <img src="images/monk.png" alt="Monk" class="class-img" />
+    </td>
+    <td class="major-skills">
+      HandToHand<br />
+      Alteration
+    </td>
+    <td class="minor-skills">
+      Agility<br />
+      Restoration
+    </td>
+    <td>
+      <div class="trait">Pressure Points</div>
+      Unarmed power attacks apply Pressure Point debuffs in sequence. The first
+      strike reduces damage dealt, the second reduces armor, and the third
+      reduces blocking effectiveness. Effects scale with Hand to Hand skill.<br /><br />
+
+      <div class="trait">Iron Fist</div>
+      While protected by a flesh spell, unarmed attacks deal additional damage.
+      Effect scales with Alteration skill.<br /><br />
+
+      <div class="trait">Inner Discipline</div>
+      Meditation and control increase stamina by +25%.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Duelist
+      <img src="images/duelist.png" alt="Duelist" class="class-img" />
+    </td>
+    <td class="major-skills">
+      OneHanded<br />
+      Block
+    </td>
+    <td class="minor-skills">
+      LightArmor<br />
+      Sneak
+    </td>
+    <td>
+      <div class="trait">Tempo</div>
+      While dual wielding, not being hit for 5 seconds grants Tempo. Attacks and
+      blocks gain effects while active.<br /><br />
+
+      <div class="trait">Pressure</div>
+      While Tempo is active, light attacks against attacking enemies reduce
+      their attack speed. Scales with One-Handed.<br /><br />
+
+      <div class="trait">No Reprieve</div>
+      While Tempo is active, power attacks against attacking enemies reduces
+      their movement speed. Scales with One-Handed.<br /><br />
+
+      <div class="trait">Reposition</div>
+      While Tempo is active, blocking or dodging grants a movement speed burst
+      for 1.5 seconds. Scales with Block.<br /><br />
+
+      <div class="trait">Effortless Grace</div>
+      +25% starting Stamina.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Nightblade
+      <img src="images/nightblade.png" alt="Nightblade" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Sneak<br />
+      Illusion
+    </td>
+    <td class="minor-skills">
+      OneHanded<br />
+      Destruction
+    </td>
+    <td>
+      <div class="trait">Veiled Mind</div>
+      Illusion spells are more powerful while undetected. Effect strength scales
+      with Illusion skill.<br /><br />
+
+      <div class="trait">Silent Arcana</div>
+      Spell casting sound is reduced based on Agility skill.<br /><br />
+
+      <div class="trait">Shadowborn Vitality</div>
+      Attunement to darkness grants +12.5% Stamina and +12.5% Magicka.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Berserker
+      <img src="images/berserker.png" alt="Berserker" class="class-img" />
+    </td>
+    <td class="major-skills">
+      OneHanded<br />
+      LightArmor
+    </td>
+    <td class="minor-skills">
+      Block<br />
+      Smithing
+    </td>
+    <td>
+      <div class="trait">Blood Rage</div>
+      Taking damage while dual wielding and power attacking triggers Blood Rage
+      for 5 seconds. Can only trigger once every 15 seconds.<br /><br />
+
+      <div class="trait">Wild Swings</div>
+      While in Blood Rage, light attacks absorb Health and power attacks absorb
+      Health and Stamina. Scales with One-Handed.<br /><br />
+
+      <div class="trait">Unstoppable</div>
+      While attacking in Blood Rage, take reduced damage and stagger. Scales
+      with Light Armor.<br /><br />
+
+      <div class="trait">Exhausted</div>
+      After Blood Rage ends, become Exhausted for 5 seconds. While exhausted
+      attacks cost 20% more Stamina.<br /><br />
+
+      <div class="trait">Combat Adrenaline</div>
+      +25% Stamina.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Scout
+      <img src="images/scout.png" alt="Scout" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Marksman<br />
+      Agility
+    </td>
+    <td class="minor-skills">
+      Alteration<br />
+      Pickpocket
+    </td>
+    <td>
+      <div class="trait">Pathfinder</div>
+      While running or sprinting, movement speed and jump height are increased.
+      Effect scales with Agility skill.<br /><br />
+
+      <div class="trait">Ambush Shot</div>
+      Sneak attacks with bows are slower, but deal increased sneak attack
+      damage. Effect scales with Marksman skill.<br /><br />
+
+      <div class="trait">Lead the Way</div>
+      Scout's training grants +25% starting Stamina.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Shaman
+      <img src="images/shaman.png" alt="Shaman" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Conjuration<br />
+      Restoration
+    </td>
+    <td class="minor-skills">
+      TwoHanded<br />
+      LightArmor
+    </td>
+    <td>
+      <div class="trait">Spirit Link</div>
+      Shamans can only summon spirit and elemental types. The Shaman’s abilities
+      are empowered while a summon is active. The type of summon determines the
+      effect: Elemental (Atronach) or Spirit/Animal.<br /><br />
+
+      <div class="trait">Elemental Surge</div>
+      While an Elemental summon is active, spell magnitude is increased and
+      incoming magical damage is reduced. Spell magnitude scales with
+      Conjuration. Magic damage reduction scales with Restoration.<br /><br />
+
+      <div class="trait">Feral Spirit</div>
+      While a Spirit or Animal summon is active, Two-Handed damage is increased
+      and incoming physical damage is reduced. Melee damage scales with
+      Conjuration. Physical damage reduction scales with Restoration.<br /><br />
+
+      <div class="trait">Spirit Tempering</div>
+      Tribal resilience grants +12.5% Stamina and +12.5% Magicka.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Sorcerer
+      <img src="images/sorcerer.png" alt="Sorcerer" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Alteration<br />
+      Enchanting
+    </td>
+    <td class="minor-skills">
+      Destruction<br />
+      Illusion
+    </td>
+    <td>
+      <div class="trait">Arcane Focus</div>
+      While a staff is equipped, spell magnitude is increased. Effect scales
+      with Alteration skill.<br /><br />
+
+      <div class="trait">Scroll Savant</div>
+      Scrolls are more effective. Effect scales with Enchanting skill.<br /><br />
+
+      <div class="trait">Mystic Vestments</div>
+      Spell duration is increased while wearing robes. Effect scales with
+      Alteration skill.<br /><br />
+
+      <div class="trait">Arcane Implements</div>
+      Enchantments when wearing a robe and stave are more effective. Effect
+      scales with Enchanting skill.<br /><br />
+
+      <div class="trait">Arcane Vitality</div>
+      Deep magical attunement grants +25% Magicka.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Battlemage
+      <img src="images/battlemage.png" alt="Battlemage" class="class-img" />
+    </td>
+    <td class="major-skills">
+      HeavyArmor<br />
+      Alteration
+    </td>
+    <td class="minor-skills">
+      Destruction<br />
+      Enchanting
+    </td>
+    <td>
+      <div class="trait">Arcane Bulwark</div>
+      While casting spells, incoming damage and stagger are reduced. Effect
+      scales with Heavy Armor skill.<br /><br />
+
+      <div class="trait">Reactive Flesh</div>
+      Flesh spells also reduce magic damage, and taking damage while a flesh
+      spell is active increases spell magnitude for a short duration. Effect
+      scales with Alteration skill.<br /><br />
+
+      <div class="trait">Battle-Forged Will</div>
+      Hybrid discipline grants +12.5% Magicka and +12.5% Health.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Warlock
+      <img src="images/warlock.png" alt="Warlock" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Conjuration<br />
+      Illusion
+    </td>
+    <td class="minor-skills">
+      Destruction<br />
+      Alteration
+    </td>
+    <td>
+      <div class="trait">Demonic Soul</div>
+      Warlocks can only conjure undead or dremora type summons.<br /><br />
+
+      <div class="trait">Dread Servant</div>
+      While an undead summon is active, Fear spells are more effective and last
+      longer. Effects scale with Illusion skill.<br /><br />
+
+      <div class="trait">Harvest</div>
+      Deal increased damage to feared targets. Effects scale with Conjuration
+      skill.<br /><br />
+
+      <div class="trait">Cursed Essence</div>
+      Dark pact increases Magicka by +25%.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Thief
+      <img src="images/thief.png" alt="Thief" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Pickpocket<br />
+      Sneak
+    </td>
+    <td class="minor-skills">
+      Illusion<br />
+      LightArmor
+    </td>
+    <td>
+      <div class="trait">Swift Entry</div>
+      Entering Sneak grants a burst of movement speed for 3 seconds. Movement
+      speed scales with Agility. This effect has a 10 second cooldown.<br /><br />
+
+      <div class="trait">Cunning Hands</div>
+      Lockpicking success and chance to be caught, pickpocket success, and lock
+      sweet spot size improve with Security skill.<br /><br />
+
+      <div class="trait">Cutpurse Conditioning</div>
+      Thieves’ reflexes grant +25% starting Stamina.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Warrior
+      <img src="images/warrior.png" alt="Warrior" class="class-img" />
+    </td>
+    <td class="major-skills">
+      HeavyArmor<br />
+      TwoHanded
+    </td>
+    <td class="minor-skills">
+      Block<br />
+      Smithing
+    </td>
+    <td>
+      <div class="trait">Relentless Strikes</div>
+      Power attacks deal increased damage and cost additional Stamina. Scales
+      with Two-Handed skill.<br /><br />
+
+      <div class="trait">War Momentum</div>
+      Performing a power attack invigorates the Warrior, restoring Stamina over
+      time. Stamina regeneration scales with Heavy Armor skill.<br /><br />
+
+      <div class="trait">Warrior’s Endurance</div>
+      Battlefield conditioning grants +25% starting Health.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="class-name">
+      Witchhunter
+      <img src="images/witchhunter.png" alt="Witchhunter" class="class-img" />
+    </td>
+    <td class="major-skills">
+      Marksman<br />
+      Alchemy
+    </td>
+    <td class="minor-skills">
+      TwoHanded<br />
+      LightArmor
+    </td>
+    <td>
+      <div class="trait">Potent Draughts</div>
+      Beneficial and detrimental potions last longer and have increased
+      effectiveness. Effect scales with Alchemy skill.<br /><br />
+
+      <div class="trait">Prepared Hunter</div>
+      While under the effects of any beneficial potion, the Witchhunter gains
+      increased damage reduction and reduced stamina costs for attacks. Effect
+      scales with Alchemy skill.<br /><br />
+
+      <div class="trait">Silvered Execution</div>
+      Silver weapons deal increased damage against undead and additional general
+      damage scaling with Two-Handed skill.<br /><br />
+
+      <div class="trait">Toxic Exploitation</div>
+      Attacking poisoned targets deals increased damage. Effect scales with
+      Two-Handed skill.<br /><br />
+
+      <div class="trait">Unnatural Enhancement</div>
+      Survival-hardened physique grants +25% starting Stamina.
+    </td>
+  </tr>
+</table>
