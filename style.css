@@ -357,11 +357,3 @@ td {
   display: block;
   margin: 0 auto;
 }
-
-.class-img-shaman {
-  width: 310px;
-  height: 310px;
-  object-fit: contain;
-  margin-left: 0px;
-  vertical-align: middle;
-}
